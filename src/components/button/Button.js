@@ -30,11 +30,17 @@ export class Button extends Component {
 }
 
 Button.propTypes = {
+    /** Especifica si el botón estará activo */
     active: PropTypes.bool,
+    /** Especifica la posición flotante del botón */
     position: PropTypes.string,
+    /** Especifica si el botón es primario o secundario */
     variant: PropTypes.string,
+    /** Indica la opacidad del botón */
     opacity: PropTypes.float,
+    /** Indica el padding para aumentar el tamaño del botón */
     padding: PropTypes.string,
+    /** Añade una acción para el botón */
     onPress: PropTypes.func,
 };
 
@@ -42,7 +48,7 @@ Button.defaultProps = {
     active: false,
     position: "left",
     variant: "primary",
-    opacity: "0.5",
+    opacity: "1",
     padding: '10px',
     onPress: () => {}
 };
