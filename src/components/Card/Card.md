@@ -5,7 +5,7 @@ Con este componente puedes crear tarjeta en la puedes introducir imagen, titulo,
 Puedes introducir un titulo de la siguiente manera:
 
 ```jsx
-<Card scrImage='scr'></Card>
+<Card scrImage='https://avatars2.githubusercontent.com/u/7150812?s=460&v=4'></Card>
 ```
 
 ## Card titulo

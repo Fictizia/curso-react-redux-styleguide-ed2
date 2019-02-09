@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Card.css';
+import PropTypes from 'prop-types';
 
 
 const Title = (props) => {
@@ -31,6 +32,14 @@ export class Card extends Component {
       </aside>
     );
   }
+}
+
+Card.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  paragraph: PropTypes.string,
+  width: PropTypes.oneOfType[PropTypes.string, PropTypes.number],
+  scrImage: PropTypes.string,
 }
 
 Card.defaultProps = {
