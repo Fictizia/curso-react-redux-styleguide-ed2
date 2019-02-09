@@ -28,6 +28,7 @@ export class Card extends Component {
           <Title text={this.props.title}/>
           <SubTitle text={this.props.subtitle}/>
           <Paragraph text={this.props.paragraph}/>
+          {this.props.children}
         </div>
       </aside>
     );
