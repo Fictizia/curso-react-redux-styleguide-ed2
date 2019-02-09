@@ -77,8 +77,8 @@ export class Message extends Component {
 }
 
 Message.propTypes = {
-  /** El tipo de mensaje que queremos mostrar en pantalla: error, success o question */
-  type: PropTypes.string.required
+  /** El tipo de mensaje que queremos mostrar en pantalla: */
+  type: PropTypes.oneOf(['error', 'success', 'question'])
 }
 
 Message.defaultProps = {
