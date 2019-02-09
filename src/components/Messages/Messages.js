@@ -77,6 +77,10 @@ export class Message extends Component {
 }
 
 Message.propTypes = {
-  content: PropTypes.string.required,
+  /** El tipo de mensaje que queremos mostrar en pantalla: error, success o question */
   type: PropTypes.string.required
+}
+
+Message.defaultProps = {
+  type: "No se renderizará nada"
 }
