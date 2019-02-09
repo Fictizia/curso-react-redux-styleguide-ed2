@@ -10,7 +10,9 @@ function getCustomClass(props) {
 
 var buttonStyle = (props) => {
     return {
-        padding: props.padding
+        padding: props.padding,
+        float: props.position,
+        opacity: props.opacity
     }
 };
 
@@ -31,24 +33,16 @@ Button.propTypes = {
     active: PropTypes.bool,
     position: PropTypes.string,
     variant: PropTypes.string,
-
-    bgColor: PropTypes.string,
-    bgOpacity: PropTypes.number,
-    buttonColor: PropTypes.string,
-
+    opacity: PropTypes.float,
     padding: PropTypes.string,
     onPress: PropTypes.func,
 };
 
 Button.defaultProps = {
     active: false,
-    position: "right",
+    position: "left",
     variant: "primary",
-
-    bgColor: "transparent",
-    bgOpacity: 1,
-    buttonColor: "rgba(0,0,0,1)",
-
+    opacity: "0.5",
     padding: '10px',
     onPress: () => {}
 };
