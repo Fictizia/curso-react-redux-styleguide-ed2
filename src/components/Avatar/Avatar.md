@@ -1,6 +1,7 @@
 # Avatares
 Para utilizar el componente avatar solo tendrás que importar Avatar.js en tu proyecto
-y configurarlo como tú quieras
+y configurarlo como tú quieras.
+Para visualizar correctamente el avatar es **OBLIGATORIO** añadir el tamaño **size** y la forma **shape** de tu avatar
 Puedes elegir entre 3 tamaños diferentes: **small** , **medium** y **large** , añadiendo la prop size.
 Puedes elegir entre 2 formas diferentes: **circle** y **square** , añadiendo la prop shape.
 
